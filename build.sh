@@ -1,10 +1,18 @@
 #!/bin/bash
 set -e
 
-echo "=== Downloading Flutter SDK ==="
-git clone https://github.com/flutter/flutter.git -b stable --depth 1 _flutter
+FLUTTER_VERSION="3.24.5"
 
-export PATH="$PATH:`pwd`/_flutter/bin"
+echo "=== Downloading Flutter SDK ${FLUTTER_VERSION} ==="
+git clone https://github.com/flutter/flutter.git \
+  -b "${FLUTTER_VERSION}" \
+  --depth 1 \
+  _flutter
+
+export PATH="$(pwd)/_flutter/bin:$PATH"
+
+echo "=== Flutter Version ==="
+flutter --version
 
 echo "=== Getting Flutter Dependencies ==="
 flutter pub get
