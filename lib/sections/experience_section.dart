@@ -70,22 +70,6 @@ class ExperienceSection extends StatelessWidget {
                         ? Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF3B82F6).withOpacity(0.12),
-                                  borderRadius: BorderRadius.circular(6),
-                                ),
-                                child: Text(
-                                  "May 2023 – May 2026",
-                                  style: GoogleFonts.inter(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
-                                    color: const Color(0xFF3B82F6),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 16),
                               Text(
                                 "Mobile Application Developer (iOS)",
                                 style: GoogleFonts.inter(
@@ -101,6 +85,22 @@ class ExperienceSection extends StatelessWidget {
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
                                   color: const Color(0xFF3B82F6),
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF3B82F6).withOpacity(0.12),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: Text(
+                                  "May 2023 – May 2026",
+                                  style: GoogleFonts.inter(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                    color: const Color(0xFF3B82F6),
+                                  ),
                                 ),
                               ),
                             ],

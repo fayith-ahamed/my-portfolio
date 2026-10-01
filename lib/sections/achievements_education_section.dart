@@ -133,22 +133,6 @@ class AchievementsEducationSection extends StatelessWidget {
                               ? Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                                      decoration: BoxDecoration(
-                                        color: const Color(0xFF3B82F6).withOpacity(0.12),
-                                        borderRadius: BorderRadius.circular(6),
-                                      ),
-                                      child: Text(
-                                        edu.period,
-                                        style: GoogleFonts.inter(
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w600,
-                                          color: const Color(0xFF3B82F6),
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(height: 12),
                                     Text(
                                       edu.degree,
                                       style: GoogleFonts.inter(
@@ -164,6 +148,22 @@ class AchievementsEducationSection extends StatelessWidget {
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
                                         color: const Color(0xFF06B6D4),
+                                      ),
+                                    ),
+                                    const SizedBox(height: 10),
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF3B82F6).withOpacity(0.12),
+                                        borderRadius: BorderRadius.circular(6),
+                                      ),
+                                      child: Text(
+                                        edu.period,
+                                        style: GoogleFonts.inter(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                          color: const Color(0xFF3B82F6),
+                                        ),
                                       ),
                                     ),
                                   ],
